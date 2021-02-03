@@ -1,3 +1,3 @@
 #!/bin/bash
 
-hub release create -a ./${FILE} -m "v${GITHUB_REF##*/}" "Release v${GITHUB_REF##*/}" 
+hub release create -a ./${FILE} -m "Release v${GITHUB_REF##*/}" ${GITHUB_REF##*/}
